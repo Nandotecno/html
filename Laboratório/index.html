@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consultórios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Agendamento de Consultório Médicos</h1>
+    <div class="container">
+        <form id="bookingForm">
+            <label for="lab">Escolha um Consultório:</label>
+            <select id="lab" name="lab" required>
+                <option value="Lab 1">Consultório 1</option>
+                <option value="Lab 2">Consultório 2</option>
+                <option value="Lab 3">Consultório 3</option>
+                <option value="Lab 4">Consultório 4</option>
+            </select>
+
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Agendar</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
